@@ -11,7 +11,7 @@ const calculateHash = async () => {
         const hash = createHash('sha256').update(content).digest('hex');
         console.log(hash);
     } catch (err) {
-        throw new Error(hash);
+        throw new Error(err);
     }
 
 };
