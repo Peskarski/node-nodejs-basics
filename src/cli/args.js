@@ -2,7 +2,7 @@ const parseArgs = () => {
     const args = process.argv.slice(2);
     let result = '';
 
-    process.argv.forEach((arg, index) => {
+    args.forEach((arg, index) => {
         if (arg.startsWith('--')) {
             result += `${arg.slice(2)} is ${args[index + 1]}, `;
         }
